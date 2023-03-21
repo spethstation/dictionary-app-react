@@ -10,7 +10,7 @@ export default function App() {
           <div className="hero-text">
             <header className="App-header">
               <img src={logo} className="App-logo img-fluid" alt="logo" />
-              <h1>Dictionary App</h1>
+              <h1>Word Nerd</h1>
             </header>
           </div>
         </div>
