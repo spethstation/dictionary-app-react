@@ -11,12 +11,20 @@ export default function Dictionary() {
     setDefinition(response.data);
   }
 
+  function handleImageResponse(response) {
+    console.log(response);
+  }
+
   function search(event) {
     event.preventDefault();
 
     let apiKey = "402d5cdade9ocf6tbbb9c2e4fa325683";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
+
+    let sheCodesApiKey = "402d5cdade9ocf6tbbb9c2e4fa325683";
+    let sheCodesApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${sheCodesApiKey}`;
+    axios.get(sheCodesApiUrl).then(handleImageResponse);
   }
 
   function keywordChange(event) {
