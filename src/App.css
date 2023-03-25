@@ -146,3 +146,9 @@ p {
   padding: 30px;
   margin: 20px 0;
 }
+
+@media (max-width: 768px) {
+  .Photos {
+    display: none;
+  }
+}
