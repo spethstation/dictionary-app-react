@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Photos(props) {
-  if (props.photos) {
+  if (props.photos && props.photos.status !== "not_found") {
     return (
       <section className="Photos">
         <div className="row">

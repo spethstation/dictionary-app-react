@@ -2,8 +2,8 @@ import React from "react";
 import Meaning from "./Meaning";
 
 export default function Results(props) {
-  console.log(props.results);
-  if (props.results) {
+  console.log({ r: props.results });
+  if (props.results && props.results.status !== "not_found") {
     return (
       <div className="Results">
         <section>
