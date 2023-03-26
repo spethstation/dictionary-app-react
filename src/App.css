@@ -96,6 +96,7 @@ p {
   color: var(--second-color);
   padding: 5px 10px;
   font-weight: 300;
+  font-size: 14px;
 }
 
 .Dictionary section {
@@ -156,5 +157,21 @@ p {
 @media (max-width: 768px) {
   .Photos {
     display: none;
+  }
+
+  .hero-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image {
+    height: 190px;
+  }
+}
+
+@media (max-width: 280px) {
+  .Dictionary input {
+    font-size: 10px;
   }
 }
