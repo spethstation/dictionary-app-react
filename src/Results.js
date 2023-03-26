@@ -19,6 +19,12 @@ export default function Results(props) {
         })}
       </div>
     );
+  } else if (props.results && props.results.status === "not_found") {
+    return (
+      <section className="sorry">
+        <h2>sorry, that word yielded no results</h2>
+      </section>
+    );
   } else {
     return null;
   }
