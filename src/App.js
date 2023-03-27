@@ -7,9 +7,7 @@ export default function App() {
       <div className="container">
         <div className="hero-image img-fluid"></div>
         <main>
-          <div>
-            <Dictionary />
-          </div>
+          <Dictionary />
         </main>
         <footer className="footer-text">Coded by Elspeth Humble</footer>
       </div>
